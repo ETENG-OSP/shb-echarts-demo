@@ -1,0 +1,18 @@
+{
+  "name": "Static HTML App",
+  "main": "app",
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "echarts": "~2.2.3"
+  },
+  "overrides": {
+    "marked": "lib/marked.js",
+    "echarts": [
+      "build/dist/echarts.js",
+      "build/dist/chart/pie.js"
+    ]
+  },
+  "proxies": {
+    "/api": "http://localhost:8080"
+  }
+}
